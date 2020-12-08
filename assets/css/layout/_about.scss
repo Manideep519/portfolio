@@ -1,0 +1,15 @@
+.about {
+    background-color: $text-color-white;
+    &__flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &>div {
+            flex-basis: 100%;
+        }
+        @media(min-width: 768px) {
+            flex-direction: row;
+        }
+    }
+}

@@ -1,0 +1,102 @@
+// base styles
+.heading {
+    text-align: center;
+    color: $text-color-pink;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    &--sub {
+        font-size: 34px;
+        text-align: left !important;
+        margin-bottom: 20px;
+    }
+}
+
+.text {
+    color: $text-color-white;
+    font-size: 18px;
+    line-height: 2;
+    text-align: initial;
+}
+
+// section styles
+.home {
+    &__text {
+        font-family: 'Lato', sans-serif;
+        color: $text-color-white;
+        text-align: center;
+        &--hilight {
+            color: $text-color-pink;
+        }
+        h1 {
+            font-size: 36px;
+            letter-spacing: 1.4px;
+            @media(min-width: $main-break-point) {
+                font-size: 58px;
+            }
+        }
+    }
+}
+
+.about {
+    .text {
+        width: 100%;
+        color: #181818 !important;
+        @media(min-width: $main-break-point) {
+            width: 90%;
+        }
+    }
+    &__flex__mission {
+        p {
+            font-family: 'Lato', arial, sans-serif;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 60px;
+            letter-spacing: 2.4px;
+            color: #464c53 !important;
+            @media(min-width: $main-break-point) {
+                font-size: 40px;
+            }
+            .hilight {
+                color: #181818;
+            }
+        }
+    }
+}
+
+.projects {}
+
+.footer {
+    p {
+        text-align: center;
+        font-size: 26px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    i {
+        background-color: rgb(68, 64, 64);
+        font-size: 20px;
+        margin: 10px;
+        padding: 14px 16px;
+        transition: all .5s;
+        color: $text-color-white;
+        &:hover {
+            cursor: pointer;
+            background-color: $text-color-white;
+            color: rgb(68, 64, 64);
+        }
+        @media(min-width: $main-break-point) {
+            font-size: 26px;
+        }
+    }
+    .author {
+        text-align: center;
+        display: block;
+        margin-top: 20px;
+        font-size: 12px;
+        color: #86898a;
+        text-transform: uppercase;
+    }
+}

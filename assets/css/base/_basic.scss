@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+::selection {
+    color: $text-color-pink;
+    background: #181818;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: $primary-body-bg;
+    font-family: 'Open Sans', sans-serif;
+    color: $white;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 25px;
+    @media(min-width: $main-break-point) {
+        padding: 50px;
+    }
+}

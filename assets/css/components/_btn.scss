@@ -1,0 +1,27 @@
+a.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 22px;
+    font-size: 20px;
+    line-height: 1.8pt;
+    text-decoration: none;
+    border: 2px solid $text-color-white;
+    color: $text-color-white;
+    transition: all .3s;
+    &:hover {
+        border: 2px solid $text-color-pink;
+        background-color: $text-color-pink;
+    }
+    &__home {
+        i {
+            font-size: 16px;
+            margin-left: 10px;
+            transition: all .5s;
+        }
+    }
+    &:hover {
+        i {
+            transform: rotate(90deg);
+        }
+    }
+}
