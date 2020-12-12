@@ -49,13 +49,13 @@ section {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  min-height: 100vh;
   padding: 50px 25px;
 }
 
 @media (min-width: 768px) {
   section {
     padding: 50px;
+    min-height: 100vh;
   }
 }
 
@@ -76,9 +76,15 @@ section {
 
 .text {
   color: #ecf0f1;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 2;
   text-align: initial;
+}
+
+@media (min-width: 768px) {
+  .text {
+    font-size: 18px;
+  }
 }
 
 .home__text {
@@ -117,7 +123,7 @@ section {
   font-family: 'Lato', arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 22px;
   line-height: 60px;
   letter-spacing: 2.4px;
   color: #464c53 !important;
@@ -296,8 +302,16 @@ a.btn:hover i {
 }
 
 .about__flex > div {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  -ms-flex-preferred-size: initial;
+      flex-basis: initial;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .about__flex > div {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }
 
 @media (min-width: 768px) {

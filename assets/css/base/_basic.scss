@@ -41,9 +41,9 @@ body {
 section {
     display: flex;
     width: 100%;
-    min-height: 100vh;
     padding: 50px 25px;
     @media(min-width: $main-break-point) {
         padding: 50px;
+        min-height: 100vh;
     }
 }

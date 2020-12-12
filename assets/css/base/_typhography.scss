@@ -15,9 +15,12 @@
 
 .text {
     color: $text-color-white;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 2;
     text-align: initial;
+    @media (min-width: $main-break-point) {
+        font-size: 18px;
+    }
 }
 
 // section styles
@@ -52,7 +55,7 @@
             font-family: 'Lato', arial, sans-serif;
             text-transform: uppercase;
             font-weight: 700;
-            font-size: 32px;
+            font-size: 22px;
             line-height: 60px;
             letter-spacing: 2.4px;
             color: #464c53 !important;
